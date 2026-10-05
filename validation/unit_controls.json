@@ -1,0 +1,9 @@
+{
+  "tests_run": 7,
+  "failures": 0,
+  "errors": 0,
+  "success": true,
+  "gnu_runtime_installed": false,
+  "gnu_runtime_executed": false,
+  "note": "GNU scheduler/Qt GUI require separate stage_o_gr_replay.py execution; no emulation."
+}

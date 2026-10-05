@@ -1,0 +1,9 @@
+﻿*.c64
+*.bin
+*.zip
+*.tar
+*.log
+.DS_Store
+__pycache__/
+*.pyc
+fixtures/

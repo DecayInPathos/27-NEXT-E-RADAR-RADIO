@@ -1,0 +1,24 @@
+id: stage_o_patched_rx
+label: Stage O Patched RX
+category: '[Stage O]'
+flags: [python]
+parameters:
+- {id: sample_rate, label: Input / Lane Sample Rate, dtype: real, default: '1000000'}
+- {id: sps, label: SPS (auto or input-domain integer), dtype: string, default: 'auto'}
+- {id: cfo_hz, label: CFO (None for acquisition), dtype: raw, default: 'None'}
+- {id: cutoff_hz, label: Locked Digital Cutoff, dtype: real, default: '60000'}
+- {id: chunk_seconds, label: Processing Block Seconds, dtype: real, default: '0.5'}
+- {id: cfo_tracking, label: CFO Tracking, dtype: bool, default: 'True'}
+- {id: output_dir, label: Output Directory, dtype: string, default: 'stage_o_gr_output'}
+inputs:
+- {domain: stream, dtype: complex, label: IQ}
+outputs:
+- {domain: stream, dtype: float, label: Normalized MF}
+- {domain: stream, dtype: float, label: Raw FM Hz}
+- {domain: message, id: frame_out, optional: true}
+- {domain: message, id: events, optional: true}
+templates:
+  imports: from stage_o_gnuradio import StageOPatchedRxBlock
+  make: StageOPatchedRxBlock(sample_rate=${sample_rate}, sps=${sps}, cfo_hz=${cfo_hz}, cutoff_hz=${cutoff_hz}, chunk_seconds=${chunk_seconds}, cfo_tracking=${cfo_tracking}, output_dir=${output_dir})
+file_format: 1
+

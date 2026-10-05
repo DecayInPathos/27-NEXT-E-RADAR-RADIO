@@ -1,0 +1,81 @@
+{
+  "config": {
+    "sample_rate": 1000000.0,
+    "sps_candidates": [
+      47
+    ],
+    "bt": 0.35,
+    "wave": "info",
+    "chunk_seconds": 0.5,
+    "halo_seconds": 0.12,
+    "acquisition_cutoff_hz": 260000,
+    "locked_cutoff_hz": 60000,
+    "cfo_hz": 32760.823911734893,
+    "cfo_tracking": false,
+    "cfo_alpha": 0.15,
+    "access_score_min": 0.8,
+    "header_bit_errors": 0,
+    "loss_timeout_seconds": 2.0,
+    "position_signed": true
+  },
+  "locked": true,
+  "selected_sps": 47,
+  "effective_cutoff_hz": 60000,
+  "peak_process_rss_mib": 246.59375,
+  "current_cfo_hz": 32760.823911734893,
+  "symbol_rate_hz": 21276.59574468085,
+  "input_samples": 70123520,
+  "processed_samples": 70123520,
+  "iq_seconds": 70.12352,
+  "wall_seconds": 19.657416258999547,
+  "physical_fragments": 6695,
+  "crc_frames": 3662,
+  "crc16_attempts": 3685,
+  "crc_success_percent": 99.37584803256445,
+  "crc_rate_definition": "passed CRC16 / all complete known-command frames with valid CRC8",
+  "frames_per_iq_second": 52.222136025116825,
+  "frames_per_wall_second": 186.29101361800107,
+  "real_time_factor": 3.567280616947616,
+  "first_frame_wall_seconds": 0.12522350200015353,
+  "batch_processing_ms": {
+    "p50": 130.39492999996583,
+    "p95": 158.81459899992478,
+    "max": 169.73093599972344
+  },
+  "modeled_sample_buffering_latency_ms": {
+    "p50": 360.2685,
+    "p95": 585.78315,
+    "max": 613.8820000000001
+  },
+  "rf_to_host_latency_ms": null,
+  "rf_latency_note": "No transmitter/hardware timestamp; not measurable from raw IQ",
+  "by_command": {
+    "0x0A02": 738,
+    "0x0A03": 738,
+    "0x0A04": 737,
+    "0x0A05": 720,
+    "0x0A01": 729
+  },
+  "parser_stats": {
+    "physical_fragments": 6695,
+    "dropped_noise_bytes": 1628,
+    "crc16_attempts": 3685,
+    "crc_frames": 3662,
+    "packet_gaps": 29,
+    "discarded_partial_bytes": 256,
+    "bad_data_len": 5,
+    "bad_frame_crc": 23,
+    "bad_header_crc": 3,
+    "bad_cmd_id": 2
+  },
+  "receiver_stats": {
+    "physical_fragments": 6695,
+    "crc_frames": 3662,
+    "processed_samples": 70123520
+  },
+  "ordered_frame_sha256": "2e7d5acdb4290cb231c16013e957282770ec3066e8b1a624c71e829e7982e1af",
+  "lock_events": [],
+  "normalized_trace_sha256": "56b885979f993a9c298ef7a5b4a32e7b724e4b15666112c0b9398ab91a909e86",
+  "raw_fm_trace_sha256": "bb0c14220b103b1b30f803687889252c6ca92bd441e5f99dc174f9ebfad4ed43",
+  "symbol_center_indices_sha256": "c43302e1f414693c630dd3a1e59e90ed5002be666e3159b39f58d3449e5a4f5d"
+}

@@ -1,0 +1,13 @@
+id: stage_o_symbol_sampler
+label: Stage O Recovered Symbol Sampler
+category: '[Stage O]'
+flags: [python]
+inputs:
+- {domain: stream, dtype: float, label: Normalized MF}
+outputs:
+- {domain: stream, dtype: complex, label: Decision symbols}
+templates:
+  imports: from stage_o_gnuradio import TaggedSymbolSampler
+  make: TaggedSymbolSampler()
+file_format: 1
+

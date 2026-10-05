@@ -1,0 +1,75 @@
+{
+  "config": {
+    "sample_rate": 1000000.0,
+    "sps_candidates": [
+      47
+    ],
+    "bt": 0.35,
+    "wave": "info",
+    "chunk_seconds": 0.5,
+    "halo_seconds": 0.12,
+    "acquisition_cutoff_hz": 260000,
+    "locked_cutoff_hz": 60000,
+    "cfo_hz": 541.1274933700939,
+    "cfo_tracking": false,
+    "cfo_alpha": 0.15,
+    "access_score_min": 0.8,
+    "header_bit_errors": 0,
+    "loss_timeout_seconds": 2.0,
+    "position_signed": true
+  },
+  "locked": true,
+  "selected_sps": 47,
+  "effective_cutoff_hz": 60000,
+  "peak_process_rss_mib": 242.9921875,
+  "current_cfo_hz": 541.1274933700939,
+  "symbol_rate_hz": 21276.59574468085,
+  "input_samples": 3997696,
+  "processed_samples": 3997696,
+  "iq_seconds": 3.997696,
+  "wall_seconds": 1.0084332070000528,
+  "physical_fragments": 392,
+  "crc_frames": 217,
+  "crc16_attempts": 217,
+  "crc_success_percent": 100.0,
+  "crc_rate_definition": "passed CRC16 / all complete known-command frames with valid CRC8",
+  "frames_per_iq_second": 54.28126600922131,
+  "frames_per_wall_second": 215.1852978399477,
+  "real_time_factor": 3.9642645365602194,
+  "first_frame_wall_seconds": 0.11602737799967144,
+  "batch_processing_ms": {
+    "p50": 117.17761149975559,
+    "p95": 137.10465895042034,
+    "max": 145.54016400052205
+  },
+  "modeled_sample_buffering_latency_ms": {
+    "p50": 343.86899999999997,
+    "p95": 581.0284,
+    "max": 609.78
+  },
+  "rf_to_host_latency_ms": null,
+  "rf_latency_note": "No transmitter/hardware timestamp; not measurable from raw IQ",
+  "by_command": {
+    "0x0A03": 44,
+    "0x0A04": 44,
+    "0x0A05": 43,
+    "0x0A01": 43,
+    "0x0A02": 43
+  },
+  "parser_stats": {
+    "physical_fragments": 392,
+    "dropped_noise_bytes": 9,
+    "crc16_attempts": 217,
+    "crc_frames": 217
+  },
+  "receiver_stats": {
+    "physical_fragments": 392,
+    "crc_frames": 217,
+    "processed_samples": 3997696
+  },
+  "ordered_frame_sha256": "f6f10c82628eca0ea64d400ec6c53f35e845598c3918303b1fa2513a67e72ec5",
+  "lock_events": [],
+  "normalized_trace_sha256": "88c5487a29b3eb62edd9e5836bdc2a492ea64e8932ecc5b89a9b0a03401436c7",
+  "raw_fm_trace_sha256": "e343ba3d18fcbfa81a645dba3ae1991479433a0faaf1f2d9c774d1d42ff307a3",
+  "symbol_center_indices_sha256": "3c16b4eabf62a00aa24721a5f7fc59c642eca7b8f69517bbbe2523cabeb58b1c"
+}

@@ -1,0 +1,493 @@
+{
+  "success": true,
+  "cases": [
+    {
+      "config": {
+        "sample_rate": 1000000.0,
+        "sps_candidates": [
+          47
+        ],
+        "bt": 0.35,
+        "wave": "info",
+        "chunk_seconds": 0.5,
+        "halo_seconds": 0.12,
+        "acquisition_cutoff_hz": 260000,
+        "locked_cutoff_hz": 60000,
+        "cfo_hz": 32760.823911734893,
+        "cfo_tracking": false,
+        "cfo_alpha": 0.15,
+        "access_score_min": 0.8,
+        "header_bit_errors": 0,
+        "loss_timeout_seconds": 2.0,
+        "position_signed": true
+      },
+      "locked": true,
+      "selected_sps": 47,
+      "effective_cutoff_hz": 60000,
+      "peak_process_rss_mib": 246.59375,
+      "current_cfo_hz": 32760.823911734893,
+      "symbol_rate_hz": 21276.59574468085,
+      "input_samples": 70123520,
+      "processed_samples": 70123520,
+      "iq_seconds": 70.12352,
+      "wall_seconds": 19.657416258999547,
+      "physical_fragments": 6695,
+      "crc_frames": 3662,
+      "crc16_attempts": 3685,
+      "crc_success_percent": 99.37584803256445,
+      "crc_rate_definition": "passed CRC16 / all complete known-command frames with valid CRC8",
+      "frames_per_iq_second": 52.222136025116825,
+      "frames_per_wall_second": 186.29101361800107,
+      "real_time_factor": 3.567280616947616,
+      "first_frame_wall_seconds": 0.12522350200015353,
+      "batch_processing_ms": {
+        "p50": 130.39492999996583,
+        "p95": 158.81459899992478,
+        "max": 169.73093599972344
+      },
+      "modeled_sample_buffering_latency_ms": {
+        "p50": 360.2685,
+        "p95": 585.78315,
+        "max": 613.8820000000001
+      },
+      "rf_to_host_latency_ms": null,
+      "rf_latency_note": "No transmitter/hardware timestamp; not measurable from raw IQ",
+      "by_command": {
+        "0x0A02": 738,
+        "0x0A03": 738,
+        "0x0A04": 737,
+        "0x0A05": 720,
+        "0x0A01": 729
+      },
+      "parser_stats": {
+        "physical_fragments": 6695,
+        "dropped_noise_bytes": 1628,
+        "crc16_attempts": 3685,
+        "crc_frames": 3662,
+        "packet_gaps": 29,
+        "discarded_partial_bytes": 256,
+        "bad_data_len": 5,
+        "bad_frame_crc": 23,
+        "bad_header_crc": 3,
+        "bad_cmd_id": 2
+      },
+      "receiver_stats": {
+        "physical_fragments": 6695,
+        "crc_frames": 3662,
+        "processed_samples": 70123520
+      },
+      "ordered_frame_sha256": "2e7d5acdb4290cb231c16013e957282770ec3066e8b1a624c71e829e7982e1af",
+      "lock_events": [],
+      "normalized_trace_sha256": "56b885979f993a9c298ef7a5b4a32e7b724e4b15666112c0b9398ab91a909e86",
+      "raw_fm_trace_sha256": "bb0c14220b103b1b30f803687889252c6ca92bd441e5f99dc174f9ebfad4ed43",
+      "symbol_center_indices_sha256": "c43302e1f414693c630dd3a1e59e90ed5002be666e3159b39f58d3449e5a4f5d",
+      "case": "long_fixed",
+      "subprocess_wall_seconds": 20.98234407899963,
+      "ordered_frames_match_previous_reference": true
+    },
+    {
+      "config": {
+        "sample_rate": 1000000.0,
+        "sps_candidates": [
+          47,
+          52
+        ],
+        "bt": 0.35,
+        "wave": "info",
+        "chunk_seconds": 0.5,
+        "halo_seconds": 0.12,
+        "acquisition_cutoff_hz": 260000,
+        "locked_cutoff_hz": 60000,
+        "cfo_hz": null,
+        "cfo_tracking": true,
+        "cfo_alpha": 0.15,
+        "access_score_min": 0.8,
+        "header_bit_errors": 0,
+        "loss_timeout_seconds": 2.0,
+        "position_signed": true
+      },
+      "locked": true,
+      "selected_sps": 47,
+      "effective_cutoff_hz": 60000,
+      "peak_process_rss_mib": 248.15625,
+      "current_cfo_hz": 32811.11418582164,
+      "symbol_rate_hz": 21276.59574468085,
+      "input_samples": 70123520,
+      "processed_samples": 70123520,
+      "iq_seconds": 70.12352,
+      "wall_seconds": 21.070014546000493,
+      "physical_fragments": 6698,
+      "crc_frames": 3664,
+      "crc16_attempts": 3687,
+      "crc_success_percent": 99.3761866015731,
+      "crc_rate_definition": "passed CRC16 / all complete known-command frames with valid CRC8",
+      "frames_per_iq_second": 52.25065712616823,
+      "frames_per_wall_second": 173.89641530624857,
+      "real_time_factor": 3.328119202144112,
+      "first_frame_wall_seconds": 0.3132124550002118,
+      "batch_processing_ms": {
+        "p50": 137.60559799993644,
+        "p95": 180.22059699978854,
+        "max": 318.77961000009236
+      },
+      "modeled_sample_buffering_latency_ms": {
+        "p50": 360.2685,
+        "p95": 585.76345,
+        "max": 613.8820000000001
+      },
+      "rf_to_host_latency_ms": null,
+      "rf_latency_note": "No transmitter/hardware timestamp; not measurable from raw IQ",
+      "by_command": {
+        "0x0A02": 738,
+        "0x0A03": 738,
+        "0x0A04": 737,
+        "0x0A05": 722,
+        "0x0A01": 729
+      },
+      "parser_stats": {
+        "discarded_partial_bytes": 256,
+        "physical_fragments": 6698,
+        "dropped_noise_bytes": 1583,
+        "crc16_attempts": 3687,
+        "crc_frames": 3664,
+        "packet_gaps": 28,
+        "bad_data_len": 5,
+        "bad_frame_crc": 23,
+        "bad_header_crc": 3,
+        "bad_cmd_id": 2
+      },
+      "receiver_stats": {
+        "lock_acquisitions": 1,
+        "physical_fragments": 6698,
+        "crc_frames": 3664,
+        "processed_samples": 70123520
+      },
+      "ordered_frame_sha256": "36b1afc5c582e0aa14eca6749f5d95113c157a825956ba801231657ec384638b",
+      "lock_events": [
+        {
+          "sample": 0,
+          "sps": 47,
+          "cfo_hz": 32726.975317660992
+        }
+      ],
+      "normalized_trace_sha256": "a32a6598856bb1a424fc532ac597d5fc05b7ec24dd51cd40533a862b988ac7c3",
+      "raw_fm_trace_sha256": "dcd00107f71591033cb252d8f6f26bebf8e127ab279ccf64ee250c4ef5342741",
+      "symbol_center_indices_sha256": "466f01681ef3690214a5783b92483b87f44964469e5cefe8aeab4f469927ebc8",
+      "case": "long_auto",
+      "subprocess_wall_seconds": 22.491367936000643
+    },
+    {
+      "config": {
+        "sample_rate": 1000000.0,
+        "sps_candidates": [
+          47,
+          52
+        ],
+        "bt": 0.35,
+        "wave": "info",
+        "chunk_seconds": 0.5,
+        "halo_seconds": 0.12,
+        "acquisition_cutoff_hz": 260000,
+        "locked_cutoff_hz": 60000,
+        "cfo_hz": null,
+        "cfo_tracking": true,
+        "cfo_alpha": 0.15,
+        "access_score_min": 0.8,
+        "header_bit_errors": 0,
+        "loss_timeout_seconds": 2.0,
+        "position_signed": true
+      },
+      "locked": true,
+      "selected_sps": 47,
+      "effective_cutoff_hz": 60000,
+      "peak_process_rss_mib": 241.9453125,
+      "current_cfo_hz": 541.3827257937952,
+      "symbol_rate_hz": 21276.59574468085,
+      "input_samples": 3997696,
+      "processed_samples": 3997696,
+      "iq_seconds": 3.997696,
+      "wall_seconds": 1.2995183040002303,
+      "physical_fragments": 392,
+      "crc_frames": 217,
+      "crc16_attempts": 217,
+      "crc_success_percent": 100.0,
+      "crc_rate_definition": "passed CRC16 / all complete known-command frames with valid CRC8",
+      "frames_per_iq_second": 54.28126600922131,
+      "frames_per_wall_second": 166.9849507560007,
+      "real_time_factor": 3.076290643767101,
+      "first_frame_wall_seconds": 0.34396034900055383,
+      "batch_processing_ms": {
+        "p50": 124.46994050014837,
+        "p95": 282.775051749877,
+        "max": 350.7967309997184
+      },
+      "modeled_sample_buffering_latency_ms": {
+        "p50": 343.86899999999997,
+        "p95": 581.0284,
+        "max": 609.78
+      },
+      "rf_to_host_latency_ms": null,
+      "rf_latency_note": "No transmitter/hardware timestamp; not measurable from raw IQ",
+      "by_command": {
+        "0x0A03": 44,
+        "0x0A04": 44,
+        "0x0A05": 43,
+        "0x0A01": 43,
+        "0x0A02": 43
+      },
+      "parser_stats": {
+        "discarded_partial_bytes": 0,
+        "physical_fragments": 392,
+        "dropped_noise_bytes": 9,
+        "crc16_attempts": 217,
+        "crc_frames": 217
+      },
+      "receiver_stats": {
+        "lock_acquisitions": 1,
+        "physical_fragments": 392,
+        "crc_frames": 217,
+        "processed_samples": 3997696
+      },
+      "ordered_frame_sha256": "f6f10c82628eca0ea64d400ec6c53f35e845598c3918303b1fa2513a67e72ec5",
+      "lock_events": [
+        {
+          "sample": 0,
+          "sps": 47,
+          "cfo_hz": 542.0155377995216
+        }
+      ],
+      "normalized_trace_sha256": "6748498a858f41cfe86cf71e25cc00b05fa84bf01d45c8437023150067da8860",
+      "raw_fm_trace_sha256": "59651623e5b2610bc144b41256cf1b693848aa1b0ffbfb84b5816bf0efb4f00e",
+      "symbol_center_indices_sha256": "3c16b4eabf62a00aa24721a5f7fc59c642eca7b8f69517bbbe2523cabeb58b1c",
+      "case": "short_auto",
+      "subprocess_wall_seconds": 2.762284572000681,
+      "ordered_frames_match_previous_reference": true
+    },
+    {
+      "config": {
+        "sample_rate": 1000000.0,
+        "sps_candidates": [
+          52
+        ],
+        "bt": 0.35,
+        "wave": "info",
+        "chunk_seconds": 0.5,
+        "halo_seconds": 0.12,
+        "acquisition_cutoff_hz": 260000,
+        "locked_cutoff_hz": 60000,
+        "cfo_hz": 541.1274933700939,
+        "cfo_tracking": false,
+        "cfo_alpha": 0.15,
+        "access_score_min": 0.8,
+        "header_bit_errors": 0,
+        "loss_timeout_seconds": 2.0,
+        "position_signed": true
+      },
+      "locked": true,
+      "selected_sps": 52,
+      "effective_cutoff_hz": 60000,
+      "peak_process_rss_mib": 234.6640625,
+      "current_cfo_hz": 541.1274933700939,
+      "symbol_rate_hz": 19230.76923076923,
+      "input_samples": 3997696,
+      "processed_samples": 3997696,
+      "iq_seconds": 3.997696,
+      "wall_seconds": 0.991494431999854,
+      "physical_fragments": 0,
+      "crc_frames": 0,
+      "crc16_attempts": 0,
+      "crc_success_percent": null,
+      "crc_rate_definition": "passed CRC16 / all complete known-command frames with valid CRC8",
+      "frames_per_iq_second": 0.0,
+      "frames_per_wall_second": 0.0,
+      "real_time_factor": 4.03199036825311,
+      "first_frame_wall_seconds": null,
+      "batch_processing_ms": {
+        "p50": 118.9505494999139,
+        "p95": 127.9458953501944,
+        "max": 128.5742290001508
+      },
+      "modeled_sample_buffering_latency_ms": null,
+      "rf_to_host_latency_ms": null,
+      "rf_latency_note": "No transmitter/hardware timestamp; not measurable from raw IQ",
+      "by_command": {},
+      "parser_stats": {},
+      "receiver_stats": {
+        "processed_samples": 3997696
+      },
+      "ordered_frame_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lock_events": [],
+      "normalized_trace_sha256": "8704c7576993fc5ca3fd1faa3b4f575cd54f9c36decb47ca1f2e746645ac9ef7",
+      "raw_fm_trace_sha256": "e343ba3d18fcbfa81a645dba3ae1991479433a0faaf1f2d9c774d1d42ff307a3",
+      "symbol_center_indices_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "case": "short_sps52",
+      "subprocess_wall_seconds": 1.7408399539999664
+    },
+    {
+      "config": {
+        "sample_rate": 1000000.0,
+        "sps_candidates": [
+          47
+        ],
+        "bt": 0.35,
+        "wave": "info",
+        "chunk_seconds": 0.5,
+        "halo_seconds": 0.12,
+        "acquisition_cutoff_hz": 260000,
+        "locked_cutoff_hz": 60000,
+        "cfo_hz": 541.1274933700939,
+        "cfo_tracking": false,
+        "cfo_alpha": 0.15,
+        "access_score_min": 0.8,
+        "header_bit_errors": 0,
+        "loss_timeout_seconds": 2.0,
+        "position_signed": true
+      },
+      "locked": true,
+      "selected_sps": 47,
+      "effective_cutoff_hz": 60000,
+      "peak_process_rss_mib": 242.9921875,
+      "current_cfo_hz": 541.1274933700939,
+      "symbol_rate_hz": 21276.59574468085,
+      "input_samples": 3997696,
+      "processed_samples": 3997696,
+      "iq_seconds": 3.997696,
+      "wall_seconds": 1.0084332070000528,
+      "physical_fragments": 392,
+      "crc_frames": 217,
+      "crc16_attempts": 217,
+      "crc_success_percent": 100.0,
+      "crc_rate_definition": "passed CRC16 / all complete known-command frames with valid CRC8",
+      "frames_per_iq_second": 54.28126600922131,
+      "frames_per_wall_second": 215.1852978399477,
+      "real_time_factor": 3.9642645365602194,
+      "first_frame_wall_seconds": 0.11602737799967144,
+      "batch_processing_ms": {
+        "p50": 117.17761149975559,
+        "p95": 137.10465895042034,
+        "max": 145.54016400052205
+      },
+      "modeled_sample_buffering_latency_ms": {
+        "p50": 343.86899999999997,
+        "p95": 581.0284,
+        "max": 609.78
+      },
+      "rf_to_host_latency_ms": null,
+      "rf_latency_note": "No transmitter/hardware timestamp; not measurable from raw IQ",
+      "by_command": {
+        "0x0A03": 44,
+        "0x0A04": 44,
+        "0x0A05": 43,
+        "0x0A01": 43,
+        "0x0A02": 43
+      },
+      "parser_stats": {
+        "physical_fragments": 392,
+        "dropped_noise_bytes": 9,
+        "crc16_attempts": 217,
+        "crc_frames": 217
+      },
+      "receiver_stats": {
+        "physical_fragments": 392,
+        "crc_frames": 217,
+        "processed_samples": 3997696
+      },
+      "ordered_frame_sha256": "f6f10c82628eca0ea64d400ec6c53f35e845598c3918303b1fa2513a67e72ec5",
+      "lock_events": [],
+      "normalized_trace_sha256": "88c5487a29b3eb62edd9e5836bdc2a492ea64e8932ecc5b89a9b0a03401436c7",
+      "raw_fm_trace_sha256": "e343ba3d18fcbfa81a645dba3ae1991479433a0faaf1f2d9c774d1d42ff307a3",
+      "symbol_center_indices_sha256": "3c16b4eabf62a00aa24721a5f7fc59c642eca7b8f69517bbbe2523cabeb58b1c",
+      "case": "short_partitioned",
+      "subprocess_wall_seconds": 1.732193451999592,
+      "ordered_frames_match_previous_reference": true
+    }
+  ],
+  "gnu_radio_runtime_installed": false,
+  "gnu_radio_runtime_executed": false,
+  "pluto_hardware_executed": false,
+  "note": "Actual GNU scheduler and output-trace verification: run validate_gnu_on_host.sh; hardware requires attached Pluto.",
+  "additional_short_low_latency": {
+    "config": {
+      "sample_rate": 1000000.0,
+      "sps_candidates": [
+        47,
+        52
+      ],
+      "bt": 0.35,
+      "wave": "info",
+      "chunk_seconds": 0.1,
+      "halo_seconds": 0.12,
+      "acquisition_cutoff_hz": 260000,
+      "locked_cutoff_hz": 60000,
+      "cfo_hz": null,
+      "cfo_tracking": true,
+      "cfo_alpha": 0.15,
+      "access_score_min": 0.8,
+      "header_bit_errors": 0,
+      "loss_timeout_seconds": 2.0,
+      "position_signed": true
+    },
+    "locked": true,
+    "selected_sps": 47,
+    "effective_cutoff_hz": 60000,
+    "peak_process_rss_mib": 176.62890625,
+    "current_cfo_hz": 540.7443779492925,
+    "symbol_rate_hz": 21276.59574468085,
+    "input_samples": 3997696,
+    "processed_samples": 3997696,
+    "iq_seconds": 3.997696,
+    "wall_seconds": 2.6054013740013033,
+    "physical_fragments": 392,
+    "crc_frames": 217,
+    "crc16_attempts": 217,
+    "crc_success_percent": 100.0,
+    "crc_rate_definition": "passed CRC16 / all complete known-command frames with valid CRC8",
+    "frames_per_iq_second": 54.28126600922131,
+    "frames_per_wall_second": 83.2885106169793,
+    "real_time_factor": 1.5343877683845883,
+    "first_frame_wall_seconds": 0.10878817400043772,
+    "batch_processing_ms": {
+      "p50": 61.78885149893176,
+      "p95": 71.37721655044516,
+      "max": 108.15477600044687
+    },
+    "modeled_sample_buffering_latency_ms": {
+      "p50": 158.035,
+      "p95": 206.82619999999997,
+      "max": 213.365
+    },
+    "rf_to_host_latency_ms": null,
+    "rf_latency_note": "No transmitter/hardware timestamp; not measurable from raw IQ",
+    "by_command": {
+      "0x0A03": 44,
+      "0x0A04": 44,
+      "0x0A05": 43,
+      "0x0A01": 43,
+      "0x0A02": 43
+    },
+    "parser_stats": {
+      "discarded_partial_bytes": 0,
+      "physical_fragments": 392,
+      "dropped_noise_bytes": 9,
+      "crc16_attempts": 217,
+      "crc_frames": 217
+    },
+    "receiver_stats": {
+      "lock_acquisitions": 1,
+      "physical_fragments": 392,
+      "crc_frames": 217,
+      "processed_samples": 3997696
+    },
+    "ordered_frame_sha256": "f6f10c82628eca0ea64d400ec6c53f35e845598c3918303b1fa2513a67e72ec5",
+    "lock_events": [
+      {
+        "sample": 0,
+        "sps": 47,
+        "cfo_hz": 543.7506734165142
+      }
+    ],
+    "normalized_trace_sha256": "3eae0549f07381c45e826af3e163e080af362c0a16eeaf15eef6dd95d4403524",
+    "raw_fm_trace_sha256": "4711ac47d46811cb402a0b49e66163bd21d5f716bb5431950faa6beb85fe054a",
+    "symbol_center_indices_sha256": "3c16b4eabf62a00aa24721a5f7fc59c642eca7b8f69517bbbe2523cabeb58b1c"
+  }
+}

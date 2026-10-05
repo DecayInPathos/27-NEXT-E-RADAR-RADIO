@@ -1,0 +1,89 @@
+{
+  "config": {
+    "sample_rate": 1000000.0,
+    "sps_candidates": [
+      47,
+      52
+    ],
+    "bt": 0.35,
+    "wave": "info",
+    "chunk_seconds": 0.5,
+    "halo_seconds": 0.12,
+    "acquisition_cutoff_hz": 260000,
+    "locked_cutoff_hz": 60000,
+    "cfo_hz": null,
+    "cfo_tracking": true,
+    "cfo_alpha": 0.15,
+    "access_score_min": 0.8,
+    "header_bit_errors": 0,
+    "loss_timeout_seconds": 2.0,
+    "position_signed": true
+  },
+  "locked": true,
+  "selected_sps": 47,
+  "effective_cutoff_hz": 60000,
+  "peak_process_rss_mib": 248.15625,
+  "current_cfo_hz": 32811.11418582164,
+  "symbol_rate_hz": 21276.59574468085,
+  "input_samples": 70123520,
+  "processed_samples": 70123520,
+  "iq_seconds": 70.12352,
+  "wall_seconds": 21.070014546000493,
+  "physical_fragments": 6698,
+  "crc_frames": 3664,
+  "crc16_attempts": 3687,
+  "crc_success_percent": 99.3761866015731,
+  "crc_rate_definition": "passed CRC16 / all complete known-command frames with valid CRC8",
+  "frames_per_iq_second": 52.25065712616823,
+  "frames_per_wall_second": 173.89641530624857,
+  "real_time_factor": 3.328119202144112,
+  "first_frame_wall_seconds": 0.3132124550002118,
+  "batch_processing_ms": {
+    "p50": 137.60559799993644,
+    "p95": 180.22059699978854,
+    "max": 318.77961000009236
+  },
+  "modeled_sample_buffering_latency_ms": {
+    "p50": 360.2685,
+    "p95": 585.76345,
+    "max": 613.8820000000001
+  },
+  "rf_to_host_latency_ms": null,
+  "rf_latency_note": "No transmitter/hardware timestamp; not measurable from raw IQ",
+  "by_command": {
+    "0x0A02": 738,
+    "0x0A03": 738,
+    "0x0A04": 737,
+    "0x0A05": 722,
+    "0x0A01": 729
+  },
+  "parser_stats": {
+    "discarded_partial_bytes": 256,
+    "physical_fragments": 6698,
+    "dropped_noise_bytes": 1583,
+    "crc16_attempts": 3687,
+    "crc_frames": 3664,
+    "packet_gaps": 28,
+    "bad_data_len": 5,
+    "bad_frame_crc": 23,
+    "bad_header_crc": 3,
+    "bad_cmd_id": 2
+  },
+  "receiver_stats": {
+    "lock_acquisitions": 1,
+    "physical_fragments": 6698,
+    "crc_frames": 3664,
+    "processed_samples": 70123520
+  },
+  "ordered_frame_sha256": "36b1afc5c582e0aa14eca6749f5d95113c157a825956ba801231657ec384638b",
+  "lock_events": [
+    {
+      "sample": 0,
+      "sps": 47,
+      "cfo_hz": 32726.975317660992
+    }
+  ],
+  "normalized_trace_sha256": "a32a6598856bb1a424fc532ac597d5fc05b7ec24dd51cd40533a862b988ac7c3",
+  "raw_fm_trace_sha256": "dcd00107f71591033cb252d8f6f26bebf8e127ab279ccf64ee250c4ef5342741",
+  "symbol_center_indices_sha256": "466f01681ef3690214a5783b92483b87f44964469e5cefe8aeab4f469927ebc8"
+}

@@ -1,0 +1,203 @@
+options:
+  parameters:
+    author: Stage O RX integration
+    category: '[Stage O]'
+    id: StageO_IQ_Replay
+    title: Stage O patched IQ replay
+    description: Same DSP/CRC core as stage_o_patched_rx.py
+    generate_options: qt_gui
+    output_language: python
+    run: 'True'
+    run_command: '{python} -u {filename}'
+    run_options: prompt
+    catch_exceptions: 'True'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate:
+    - 10
+    - 10
+    rotation: 0
+    state: enabled
+blocks:
+- name: samp_rate
+  id: variable
+  parameters:
+    value: '1000000'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate:
+    - 120
+    - 10
+    rotation: 0
+    state: enabled
+- name: iq_file
+  id: variable
+  parameters:
+    value: '''fixtures/recorded_info_250ms.c64'''
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate:
+    - 300
+    - 10
+    rotation: 0
+    state: enabled
+- name: stage_o_source
+  id: stage_o_file_source
+  parameters:
+    filename: iq_file
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate:
+    - 40
+    - 150
+    rotation: 0
+    state: enabled
+- name: throttle
+  id: blocks_throttle
+  parameters:
+    type: complex
+    vlen: '1'
+    samples_per_second: samp_rate
+    ignoretag: 'True'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate:
+    - 270
+    - 150
+    rotation: 0
+    state: enabled
+- name: patched_rx
+  id: stage_o_patched_rx
+  parameters:
+    sample_rate: samp_rate
+    sps: '47'
+    cfo_hz: None
+    cutoff_hz: '60000'
+    chunk_seconds: '0.5'
+    cfo_tracking: 'True'
+    output_dir: stage_o_gr_output
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate:
+    - 480
+    - 150
+    rotation: 0
+    state: enabled
+- name: eye
+  id: qtgui_eye_sink_x
+  parameters:
+    type: float
+    size: '6016'
+    samp_per_symbol: '47'
+    srate: samp_rate
+    ymin: '-2.5'
+    ymax: '2.5'
+    nconnections: '1'
+    tr_mode: qtgui.TRIG_MODE_TAG
+    tr_slope: qtgui.TRIG_SLOPE_POS
+    tr_level: '0'
+    tr_delay: 47/samp_rate
+    tr_chan: '0'
+    tr_tag: symbol_center
+    gui_hint: 0,0,1,2
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate:
+    - 760
+    - 130
+    rotation: 0
+    state: enabled
+- name: symbol_sampler
+  id: stage_o_symbol_sampler
+  parameters: {}
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate:
+    - 750
+    - 300
+    rotation: 0
+    state: enabled
+- name: symbols
+  id: qtgui_const_sink_x
+  parameters:
+    type: complex
+    name: Normalized decision symbols
+    size: '1024'
+    xmin: '-2.5'
+    xmax: '2.5'
+    ymin: '-0.25'
+    ymax: '0.25'
+    nconnections: '1'
+    gui_hint: 1,0,1,2
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate:
+    - 980
+    - 300
+    rotation: 0
+    state: enabled
+- name: raw_fm
+  id: qtgui_time_sink_x
+  parameters:
+    type: float
+    name: Raw FM Hz
+    size: '4096'
+    srate: samp_rate
+    nconnections: '1'
+    autoscale: 'True'
+    gui_hint: 2,0,1,2
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate:
+    - 760
+    - 470
+    rotation: 0
+    state: enabled
+connections:
+- - stage_o_source
+  - '0'
+  - throttle
+  - '0'
+- - throttle
+  - '0'
+  - patched_rx
+  - '0'
+- - patched_rx
+  - '0'
+  - eye
+  - '0'
+- - patched_rx
+  - '0'
+  - symbol_sampler
+  - '0'
+- - symbol_sampler
+  - '0'
+  - symbols
+  - '0'
+- - patched_rx
+  - '1'
+  - raw_fm
+  - '0'
+metadata:
+  file_format: 1
+  grc_version: 3.10.9.2
