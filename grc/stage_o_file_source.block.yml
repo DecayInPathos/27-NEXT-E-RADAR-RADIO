@@ -1,0 +1,13 @@
+id: stage_o_file_source
+label: Stage O IQ File Source (EOF tagged)
+category: '[Stage O]'
+flags: [python]
+parameters:
+- {id: filename, label: Complex64 File, dtype: file_open, default: ''}
+outputs:
+- {domain: stream, dtype: complex, label: IQ}
+templates:
+  imports: from stage_o_gnuradio import StageOFileSource
+  make: StageOFileSource(${filename})
+file_format: 1
+

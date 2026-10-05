@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "description": "RX-only presets; no TX sensitivity or Carson validator is imported",
+  "defaults": {
+    "sample_rate": 1000000,
+    "sps": "auto",
+    "sps_candidates": [
+      47,
+      52
+    ],
+    "bt": 0.35,
+    "acquisition_cutoff_hz": 260000,
+    "locked_cutoff_hz": 60000,
+    "cfo": "CRC-gated sync fit",
+    "cfo_tracking": true,
+    "chunk_seconds": 0.5
+  },
+  "recorded_reference": {
+    "aux_info_usb_20260804_163352_456673": {
+      "sps": 47,
+      "cfo_hz": 32760.823911734893,
+      "no_track": true,
+      "cutoff_hz": 60000
+    },
+    "match_20260802_032624_557875": {
+      "sps": 47,
+      "cfo_hz": 541.1274933700939,
+      "no_track": true,
+      "cutoff_hz": 60000
+    }
+  },
+  "notes": [
+    "Sample rate is the actual INPUT/lane domain; SPS is in the same domain.",
+    "Metadata SPS is not sufficient evidence; auto still validates 47/52 with CRC.",
+    "The wider acquisition cutoff remains active if narrow filtering loses a validated nominal wide FSK wave."
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "config": {
+    "sample_rate": 1000000.0,
+    "sps_candidates": [
+      52
+    ],
+    "bt": 0.35,
+    "wave": "info",
+    "chunk_seconds": 0.5,
+    "halo_seconds": 0.12,
+    "acquisition_cutoff_hz": 260000,
+    "locked_cutoff_hz": 60000,
+    "cfo_hz": 541.1274933700939,
+    "cfo_tracking": false,
+    "cfo_alpha": 0.15,
+    "access_score_min": 0.8,
+    "header_bit_errors": 0,
+    "loss_timeout_seconds": 2.0,
+    "position_signed": true
+  },
+  "locked": true,
+  "selected_sps": 52,
+  "effective_cutoff_hz": 60000,
+  "peak_process_rss_mib": 234.6640625,
+  "current_cfo_hz": 541.1274933700939,
+  "symbol_rate_hz": 19230.76923076923,
+  "input_samples": 3997696,
+  "processed_samples": 3997696,
+  "iq_seconds": 3.997696,
+  "wall_seconds": 0.991494431999854,
+  "physical_fragments": 0,
+  "crc_frames": 0,
+  "crc16_attempts": 0,
+  "crc_success_percent": null,
+  "crc_rate_definition": "passed CRC16 / all complete known-command frames with valid CRC8",
+  "frames_per_iq_second": 0.0,
+  "frames_per_wall_second": 0.0,
+  "real_time_factor": 4.03199036825311,
+  "first_frame_wall_seconds": null,
+  "batch_processing_ms": {
+    "p50": 118.9505494999139,
+    "p95": 127.9458953501944,
+    "max": 128.5742290001508
+  },
+  "modeled_sample_buffering_latency_ms": null,
+  "rf_to_host_latency_ms": null,
+  "rf_latency_note": "No transmitter/hardware timestamp; not measurable from raw IQ",
+  "by_command": {},
+  "parser_stats": {},
+  "receiver_stats": {
+    "processed_samples": 3997696
+  },
+  "ordered_frame_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "lock_events": [],
+  "normalized_trace_sha256": "8704c7576993fc5ca3fd1faa3b4f575cd54f9c36decb47ca1f2e746645ac9ef7",
+  "raw_fm_trace_sha256": "e343ba3d18fcbfa81a645dba3ae1991479433a0faaf1f2d9c774d1d42ff307a3",
+  "symbol_center_indices_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}
